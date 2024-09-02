@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        * Copyright © Travis Trotto | dj heal the club
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLUB HEALING - dj heal the club</title>
+    <meta name="description" content="Soulful house dj based in NYC. Spiritual and emotional release through dance.">
+    <meta name="keywords"
+        content="staten, island, dj, deep, house, rare, vintage, old, school, classic, disco, soul, funk, gospel, afrohouse, afro, club, parties, underground, vinyl, house, techno">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="dj heal the club">
+    <meta property="og:title" content="CLUB HEALING - dj heal the club">
+    <meta property="og:description"
+        content="Soulful house dj based in NYC. Spiritual and emotional release through dance.">
+
+    <style>
+        /* =========================================
+            CSS Styles
+        ========================================= */
+        :root {
+            --avatar-size: 180px;
+        }
+
+        body {
+            background-color: black;
+            letter-spacing: 1.1pt;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -70%);
+            text-align: center;
+            width: 75%;
+        }
+
+        #emoji {
+            position: absolute;
+            font-size: 50px;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: white;
+            margin-top: 40px;
+            ;
+        }
+
+        h4 {
+            display: inline;
+        }
+
+        a {
+            color: white;
+            font-style: italic;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .special {
+            text-decoration: underline
+        }
+
+        /* Image */
+        .avatar {
+            position: absolute;
+            top: calc(-1 * var(--avatar-size) - 33.3px);
+            left: 50%;
+            transform: translateX(-50%);
+            width: var(--avatar-size);
+            height: var(--avatar-size);
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid white;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* =========================================
+            Mobile Resizing
+        ========================================= */
+        @media (max-width: 980px) {
+            body {
+                font-size: 2rem;
+            }
+
+            .cat {
+                font-size: 8em;
+            }
+
+            h1 {
+                margin-top: calc(2* var(--avatar-size));
+            }
+
+            .avatar {
+                margin-top: 250px;
+            }
+
+            .container {
+                margin-top: calc(var(--avatar-size));
+            }
+        }
+
+        /* =========================================
+           Handle Light/Dark Mode
+        ========================================= */
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: white;
+            }
+
+            .avatar {
+                position: absolute;
+                top: calc(-1 * var(--avatar-size) + 63.3px);
+
+                width: calc(1.1 * var(--avatar-size));
+                height: calc(1.1 * var(--avatar-size));
+            }
+
+            h1,
+            h4,
+            h5,
+            a {
+                color: black;
+            }
+
+            .avatar {
+                border: 2px solid black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--Image -->
+        <div class="avatar">
+            <img src="image3.png" alt="Avatar">
+        </div>
+
+        <!-- Name, Contact and Bio -->
+        <h1>DJ HEAL THE CLUB</h1>
+        <h5>SOULFUL HOUSE DJ BASED IN NYC</h5>
+        <h4>booking: djhealtheclub@gmail.com</h4><br><br>
+
+        <!-- Special Link -->
+        <a href="https://youtu.be/b4XJHYgIr3E">
+            <span class="special">
+                <h4>* Latest mix:</h4> click here to enjoy *
+            </span>
+            <a>_</a><br>
+        </a>
+
+        <!-- Social Media Links -->
+        <h5>Social Media</h5>
+        <a href="https://instagram.com/travistrotto">
+            <h4>Instagram:</h4> /travistrotto
+        </a><br>
+        <a href="https://www.youtube.com/@dj_heal_the_club">
+            <h4>Youtube:</h4> /@dj_heal_the_club
+        </a><br>
+        <a href="https://tikttok.com/travistrotto">
+            <h4>Tiktok:</h4> /@dj_heal_the_club
+        </a><br><br>
+
+    </div>
+
+    <!-- Emoji Mouse Pointer -->
+    <div id="emoji" style="position: absolute; font-size: 50px;">🕊️</div>
+    <script>
+        var emoji = document.getElementById('emoji');
+        document.onmousemove = function (e) {
+            var x = e.pageX - 25;
+            var y = e.pageY - 50;
+            emoji.style.left = x + +40 + 'px';
+            emoji.style.top = y + +50 + 'px';
+        };
+    </script>
+</body>
+
+</html>
